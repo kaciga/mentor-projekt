@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
+
 
 @Component({
   selector: 'app-reservation',
@@ -6,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit {
+
+
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth'
+  };
 
   constructor() { }
 
