@@ -1,7 +1,7 @@
-import { Data } from './data';
+import { LoginData } from './data';
 
 describe('Data', () => {
   it('should create an instance', () => {
-    expect(new Data()).toBeTruthy();
+    expect(new LoginData()).toBeTruthy();
   });
 });
