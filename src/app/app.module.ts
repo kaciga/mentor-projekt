@@ -11,11 +11,13 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { HomeComponent } from './home/home.component';
 import { LoginData } from './data';
 
-
+import { NgChatModule } from 'ng-chat';
 //import { BrowserModule } from '@angular/platform-browser';
 //import { NgModule } from '@angular/core';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 //import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 //import { AppComponent } from './app.component';
 
@@ -35,6 +37,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    NgChatModule,
     AppRoutingModule,
     FullCalendarModule // register FullCalendar with you app
   ],
