@@ -8,7 +8,7 @@ import { CalendarOptions } from '@fullcalendar/angular'; // useful for typecheck
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit {
-
+  res:Array<object>=[]
 
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth'
