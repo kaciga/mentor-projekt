@@ -9,6 +9,7 @@ import { P404Component } from './p404/p404.component';
 import { VideocallComponent } from './videocall/videocall.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { HomeComponent } from './home/home.component';
+import { LoginData } from './data';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,LoginData],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

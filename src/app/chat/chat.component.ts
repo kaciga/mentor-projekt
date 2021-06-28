@@ -1,3 +1,4 @@
+import { LoginData } from './../data';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() {
+   }
 
   ngOnInit(): void {
-  }
+   }
 
 }

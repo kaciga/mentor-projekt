@@ -8,5 +8,6 @@ export const user = {
     lastName:'Kiss'
   },
   email: 'minek@neked.ez',
-  ip: '64.128.58.96'
+  ip: '64.128.58.96',
+  login: true
 }

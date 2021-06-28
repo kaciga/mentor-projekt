@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
 import {CanActivate} from "@angular/router";
-
+import { LoginData } from './data';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService implements CanActivate {
 
-  constructor() { }
+  logged:boolean
+  constructor(public ld: LoginData) {
+    ld.login.subscribe(v=>this.logged=v)
+   }
 
   canActivate() {
-    console.log("LoginData");
-    return true;
+    return this.logged;
   }
 }
