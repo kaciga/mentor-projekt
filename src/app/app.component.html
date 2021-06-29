@@ -4,12 +4,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+    <div class="navbar-nav" *ngIf="logged">
       <a class="nav-item nav-link" routerLink="chat">chat</a>
       <a class="nav-item nav-link" routerLink="video">video</a>
       <a class="nav-item nav-link" routerLink="res">reservation</a>
     </div>
   </div>
+  <span id="logout" *ngIf="logged" (click)="logout()">logout {{people.name.lastName}} {{people.name.firstName}}</span>
 </nav>
 
 <router-outlet></router-outlet>
