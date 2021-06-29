@@ -4,6 +4,12 @@
 #devsnames{
   background-color: bisque;
   cursor: pointer;
+  img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+  }
   &:hover{
     text-decoration: underline;
   }
@@ -14,4 +20,7 @@
       font: 0.9em sans-serif;
     }
   }
+}
+.act{
+  color: red;
 }

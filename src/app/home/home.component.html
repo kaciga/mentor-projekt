@@ -1,9 +1,10 @@
+
 <div class="container">
   <div class="row">
 
     <div class="col-md-12 text-center">
       <p id="devs">Fejlesztők:</p>
-      <p id="devsnames" *ngFor="let dev of developers">{{dev.name}} <span  *ngFor="let pos of dev.position">{{pos}}</span> </p>
+      <p id="devsnames" *ngFor="let dev of developers" [ngClass]="{'act': dev.id==15}"><img  src="../assets/cat.png" alt=""> {{dev.name}} <span  *ngFor="let pos of dev.position">{{pos}}</span> </p>
     </div>
     <div class="col-md-12 text-center">
        <div class="card mb-3" *ngFor="let card of cards">
