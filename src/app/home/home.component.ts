@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ]
   developers:Array<object> = [
     {name:'Ballér Krisztián', photoUrl:'',position:['Fejlesztő']},
-    {name:'Baloh Richárd', photoUrl:'',position:['Fejlesztő','Grafikus']},
+    {name:'Balogh Richárd', photoUrl:'',position:['Fejlesztő','Grafikus']},
     {name:'Bozzay Viktor', photoUrl:'',position:['Fejlesztő']},
     {name:'Domján Dominika', photoUrl:'',position:['Fejlesztő']},
     {name:'Ilosvay Áron', photoUrl:'',position:['Fejlesztő']},
