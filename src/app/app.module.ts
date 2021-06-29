@@ -18,6 +18,7 @@ import { FullCalendarModule } from '@fullcalendar/angular'; // must go before pl
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
 //import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 //import { AppComponent } from './app.component';
 
@@ -33,7 +34,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     P404Component,
     VideocallComponent,
     ReservationComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
