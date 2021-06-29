@@ -13,6 +13,18 @@ export class HomeComponent implements OnInit {
     {title:'reservation',link:'/res',content:'Cras cursus, arcu nec feugiat maximus, lorem lorem maximus mi, vel tincidunt libero arcu finibus velit. Nunc tellus nulla, hendrerit fermentum porttitor sed, pellentesque eget sapien. Nullam at dignissim erat. Nullam a erat urna. Fusce consectetur odio eget nunc finibus, sit amet condimentum nisi accumsan. Nullam non arcu magna. Morbi non congue enim, ut tincidunt nulla. Morbi nulla lacus, placerat eu maximus non, auctor eget lorem. Integer tincidunt semper maximus. Proin placerat vulputate orci, eget blandit lacus scelerisque sed. Quisque tristique libero nec ipsum pellentesque lobortis. Mauris sit amet congue purus. Nulla vulputate at ante sed rutrum. Nulla velit erat, eleifend vitae auctor eu, scelerisque vel velit. Etiam condimentum dapibus eros, pulvinar venenatis tellus pulvinar eu. Aliquam volutpat ullamcorper ipsum sit amet euismod.',btnTitle:'Irány'},
     {title:'video call',link:'/video',content:'Maecenas bibendum ac nibh quis porta. Curabitur eget dapibus mi. Aliquam felis lorem, consequat sed porttitor eu, fringilla id turpis. Suspendisse potenti. Sed condimentum blandit quam, non elementum dolor auctor ut. Morbi risus quam, placerat quis enim quis, dapibus rhoncus augue. Mauris eu condimentum tellus. Phasellus sit amet justo ut felis ullamcorper consectetur nec blandit metus.',btnTitle:'Gyerünk'},
   ]
+  developers:Array<object> = [
+    {name:'Ballér Krisztián', photoUrl:'',position:['Fejlesztő']},
+    {name:'Baloh Richárd', photoUrl:'',position:['Fejlesztő','Grafikus']},
+    {name:'Bozzay Viktor', photoUrl:'',position:['Fejlesztő']},
+    {name:'Domján Dominika', photoUrl:'',position:['Fejlesztő']},
+    {name:'Ilosvay Áron', photoUrl:'',position:['Fejlesztő']},
+    {name:'Kertész Károly', photoUrl:'',position:['Fejlesztő']},
+    {name:'Ádám László', photoUrl:'',position:['']},
+    {name:'Kunszt Norbert', photoUrl:'',position:['Fejlesztő']},
+    {name:'Rost Adrienn', photoUrl:'',position:['Fejlesztő','Analitikus','pénzügyes']},
+    {name:'Tóthné Pásztor Mónika', photoUrl:'',position:['Fejlesztő']},
+  ]
   constructor() { }
 
   ngOnInit(): void {
