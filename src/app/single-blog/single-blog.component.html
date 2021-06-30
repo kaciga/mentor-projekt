@@ -1,4 +1,10 @@
-cím: {{single.title}} <br>
-tartalom: {{single.content}}<br>
-dátum: {{single.date}}<br>
-id: {{single.id}}
+<div class="card mt-4">
+  <div class="card-header text-center">{{single.title}}</div>
+  <div class="card-body pt-4 pb-4">{{single.content}}</div>
+  <div class="card-footer">{{single.date}} | id: {{single.id}}</div>
+</div>
+<div class="container">
+  <div class="row">
+    <p (click)="back()">vissza a hírekre</p>
+  </div>
+</div>
