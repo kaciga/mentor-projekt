@@ -1,15 +1,16 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/" routerLinkActive="active">FullApp</a>
+  <a class="navbar-brand" routerLink="/" >FullApp</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav" *ngIf="logged">
-      <a class="nav-item nav-link" routerLink="chat">chat</a>
-      <a class="nav-item nav-link" routerLink="video">video</a>
-      <a class="nav-item nav-link" routerLink="res">reservation</a>
+      <a class="nav-item nav-link" routerLink="chat" routerLinkActive="active">chat</a>
+      <a class="nav-item nav-link" routerLink="video" routerLinkActive="active">video</a>
+      <a class="nav-item nav-link" routerLink="res" routerLinkActive="active">reservation</a>
+      <a class="nav-item nav-link" routerLink="blogs" routerLinkActive="active">blogs</a>
     </div>
   </div>
   <span id="logout" *ngIf="logged" (click)="logout()">logout {{people.name.lastName}} {{people.name.firstName}}</span>

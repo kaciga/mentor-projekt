@@ -20,6 +20,8 @@ import { HttpClientModule, HttpParams } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { DevComponent } from './dev/dev.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 //import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 //import { AppComponent } from './app.component';
 
@@ -37,7 +39,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ReservationComponent,
     HomeComponent,
     CardComponent,
-    DevComponent
+    DevComponent,
+    BlogsComponent,
+    SingleBlogComponent
   ],
   imports: [
     BrowserModule,
