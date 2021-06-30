@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { developers } from 'src/environments/environment';
 
 @Component({
   selector: 'app-dev',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevComponent implements OnInit {
 
-  constructor() { }
+  developer
+  devId:number
+  constructor(
+    private route: ActivatedRoute,
+  ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.devId = params.id
+      developers.map(dev=>{
+        if(dev.id==this.devId) this.developer=dev
+      })
+    });
   }
 
 }

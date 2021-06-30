@@ -12,15 +12,15 @@ export const user = {
   login: true
 }
 
-export const developers:Array<object> = [
-  {name:'Ballér Krisztián',position:['Fejlesztő'],id:5},
-  {name:'Balogh Richárd', position:['Fejlesztő','Grafikus'],id:5},
-  {name:'Bozzay Viktor', position:['Fejlesztő'],id:5},
-  {name:'Domján Dominika', position:['Fejlesztő'],id:5},
+export const developers:Array<any> = [
+  {name:'Ballér Krisztián',position:['Fejlesztő'],id:1},
+  {name:'Balogh Richárd', position:['Fejlesztő','Grafikus'],id:2},
+  {name:'Bozzay Viktor', position:['Fejlesztő'],id:3},
+  {name:'Domján Dominika', position:['Fejlesztő'],id:4},
   {name:'Ilosvay Áron', position:['Fejlesztő'],id:5},
-  {name:'Kertész Károly', position:['Fejlesztő'],id:5},
-  {name:'Ádám László', position:[''],id:5},
-  {name:'Kunszt Norbert', position:['Fejlesztő'],id:15},
-  {name:'Rost Adrienn', position:['Fejlesztő','Analitikus','Pénzügyes'],id:5},
-  {name:'Tóthné Pásztor Mónika', position:['Fejlesztő'],id:5},
+  {name:'Kertész Károly', position:['Fejlesztő'],id:6},
+  {name:'Ádám László', position:[''],id:7},
+  {name:'Kunszt Norbert', position:['Fejlesztő'],id:8},
+  {name:'Rost Adrienn', position:['Fejlesztő','Analitikus','Pénzügyes'],id:9},
+  {name:'Tóthné Pásztor Mónika', position:['Fejlesztő'],id:10},
 ]

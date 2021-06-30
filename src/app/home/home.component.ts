@@ -1,5 +1,7 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { developers as d } from 'src/environments/environment';
+import { HttpParams } from '@angular/common/http';
 
 
 @Component({
@@ -17,14 +19,27 @@ export class HomeComponent implements OnInit {
     {title:'video call',link:'/video',content:'Maecenas bibendum ac nibh quis porta. Curabitur eget dapibus mi. Aliquam felis lorem, consequat sed porttitor eu, fringilla id turpis. Suspendisse potenti. Sed condimentum blandit quam, non elementum dolor auctor ut. Morbi risus quam, placerat quis enim quis, dapibus rhoncus augue. Mauris eu condimentum tellus. Phasellus sit amet justo ut felis ullamcorper consectetur nec blandit metus.',btnTitle:'Gyerünk'},
   ]
 
-  constructor() {
+  constructor(private r: Router) {
     this.developers = d
   }
 
   ngOnInit(): void {
   }
   openDev(dev):void{
-    console.log(dev);
+    const queryParams = { id: dev.id+'' };
 
+
+    /*this.router.navigate(
+      [],
+      {
+        relativeTo: activatedRoute,
+        queryParams: queryParams,
+        queryParamsHandling: 'merge', // remove to replace all query params by provided
+      });*/
+
+      this.r.navigate(["dev"],{
+        queryParams: queryParams,
+        queryParamsHandling: 'merge', // remove to replace all query params by provided
+      })
   }
 }

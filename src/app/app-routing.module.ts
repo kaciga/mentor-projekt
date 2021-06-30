@@ -1,3 +1,4 @@
+import { DevComponent } from './dev/dev.component';
 import { LoginService } from './login.service';
 import { HomeComponent } from './home/home.component';
 import { ReservationComponent } from './reservation/reservation.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'chat',component:ChatComponent, canActivate: [LoginService]},
   {path:'res',component:ReservationComponent, canActivate: [LoginService]},
   {path:'video',component:VideocallComponent, canActivate: [LoginService]},
+  {path:'dev',component:DevComponent},
   {path:'**',component:P404Component},
 ];
 
