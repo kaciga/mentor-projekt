@@ -1,5 +1,5 @@
 import { blogs as b } from './../../environments/environment';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleBlogComponent implements OnInit {
   single
-  constructor(private r: ActivatedRoute) {
+  constructor(private r: ActivatedRoute, private router: Router) {
     this.getBlog()
   }
 
@@ -21,6 +21,10 @@ export class SingleBlogComponent implements OnInit {
     b.map(blog=>{
       if(blog.id===id) this.single=blog
     })
+  }
+
+  back():void{
+    this.router.navigate(["blogs"])
   }
 
 }
