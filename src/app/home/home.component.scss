@@ -1,0 +1,54 @@
+#devs{
+  text-decoration: underline;
+}
+
+.nevKozepre{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  span{
+
+    margin: 10px;
+  }
+}
+.row{
+   margin-left: 0!important;
+   margin-right: 0!important;
+
+}
+.devsnames{
+  background-color: bisque;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px 0;
+  }
+  &:hover{
+    text-decoration: underline;
+    background-color: cyan;
+  }
+  span{
+    margin-left: 10px;
+    font: 0.7em sans-serif;
+    &:hover {
+      font: 0.9em sans-serif;
+    }
+  }
+}
+.act{
+  color: red;
+}

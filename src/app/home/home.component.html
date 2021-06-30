@@ -1,12 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
-       <div class="card mb-3" *ngFor="let card of cards">
-         <div class="card-header" >{{card.title}}</div>
-         <div class="card-body">{{card.content}}</div>
-         <div class="card-footer"><button class="btn btn-primary" [routerLink]="card.link">{{card.btnTitle}}</button></div>
-       </div>
-
+      <p id="devs">Fejlesztők:</p>
     </div>
-  </div>
+<div class="row devsnames mb-2" (click)=openDev(dev) *ngFor="let dev of developers" [ngClass]="{'act': dev.id==8}">
+  <div class="col-md-2 text-right"><img  src="../assets/cat.png" alt=""></div>
+  <div class="col-md-7 nevKozepre" >{{dev.name}}</div>
+  <div class="col-md-2 text-left skills"><span  *ngFor="let pos of dev.position">{{pos}} <br>   </span> </div>
+</div>
+    </div>
+    <div class="col-md-12 text-center">
+       <k *ngFor="let card of cards" [cardData]="card"></k>
+    </div>
 </div>
