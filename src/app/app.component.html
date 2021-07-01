@@ -6,11 +6,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav" *ngIf="logged">
-      <a class="nav-item nav-link" routerLink="chat" routerLinkActive="active">chat</a>
-      <a class="nav-item nav-link" routerLink="video" routerLinkActive="active">video</a>
-      <a class="nav-item nav-link" routerLink="res" routerLinkActive="active">reservation</a>
-      <a class="nav-item nav-link" routerLink="blogs" routerLinkActive="active">news</a>
+    <div class="navbar-nav" >
+      <a class="nav-item nav-link" routerLink="chat" routerLinkActive="active" *ngIf="logged">chat</a>
+      <a class="nav-item nav-link" routerLink="video" routerLinkActive="active" *ngIf="logged">video</a>
+      <a class="nav-item nav-link" routerLink="res" routerLinkActive="active" *ngIf="logged">reservation</a>
+      <a class="nav-item nav-link" routerLink="news" routerLinkActive="active">news</a>
     </div>
   </div>
   <span id="logout" *ngIf="logged" (click)="logout()">logout {{people.name.lastName}} {{people.name.firstName}}</span>

@@ -24,7 +24,7 @@ export class SingleBlogComponent implements OnInit {
   }
 
   back():void{
-    this.router.navigate(["blogs"])
+    this.router.navigate(["news"])
   }
 
 }
