@@ -17,8 +17,8 @@ const routes: Routes = [
   {path:'res',component:ReservationComponent, canActivate: [LoginService]},
   {path:'video',component:VideocallComponent, canActivate: [LoginService]},
   {path:'dev',component:DevComponent},
-  {path:'blogs',component:BlogsComponent},
-  {path:'blog/:id',component:SingleBlogComponent},
+  {path:'news',component:BlogsComponent},
+  {path:'news/:id',component:SingleBlogComponent},
   {path:'**',component:P404Component},
 ];
 

@@ -17,6 +17,6 @@ url
   }
 
   setUrl(id): void {
-    this.route.navigate([`blog/${id}`])
+    this.route.navigate([`news/${id}`])
   }
 }
