@@ -8,8 +8,9 @@
   <div class="col-md-7 nevKozepre" >{{dev.name}}</div>
   <div class="col-md-2 skills"><span  *ngFor="let pos of dev.position">{{pos}} <br>   </span> </div>
 </div>
-<div class="loader" *ngIf="loader"></div>
-{{data$.body }}
+<div class="loader" *ngIf="loader">
+</div>
+{{post?.body }}
     </div>
     <div class="col-md-12 text-center">
        <k *ngFor="let card of cards" [cardData]="card"></k>

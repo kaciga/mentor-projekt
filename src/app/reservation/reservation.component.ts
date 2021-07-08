@@ -8,7 +8,18 @@ import { CalendarOptions } from '@fullcalendar/angular'; // useful for typecheck
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit {
+  config: object = {
+    startEnd: false,
+    someDayEvent: false
+  }
 
+  checkConfig(key: string): boolean {
+    return this.config[key]
+  }
+
+  checkEvent() :boolean{
+    return this.checkConfig('startEnd')
+  }
 
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth'
