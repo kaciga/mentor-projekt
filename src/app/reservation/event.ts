@@ -1,10 +1,12 @@
-export class Event {
-  start: Date
-  end:Date
+export class Res {
   title: string
   id: number
+  start: Date
+  end: Date
 
-  constructor(param){
-    if(param) Object.assign(this,param)
+  constructor(data?: any) {
+    if (data != null) {
+      Object.assign(this, data);
+    }
   }
 }
